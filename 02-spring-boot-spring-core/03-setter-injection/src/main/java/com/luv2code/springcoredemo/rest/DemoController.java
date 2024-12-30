@@ -12,10 +12,16 @@ public class DemoController {
     private Coach myCoach;
 
     //define a constructor for dependency injection
-    @Autowired
+    /* @Autowired
     public DemoController(Coach theCoach){
-        myCoach=theCoach;
-    }
+       myCoach=theCoach;
+    }  */
+
+@Autowired
+public void doSomeStuff(Coach theCoach){
+    myCoach=theCoach;
+}
+
 
     @GetMapping("/dailyworkout")
     public String getDailyWorkout(){
