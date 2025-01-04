@@ -21,9 +21,17 @@ public class CruddemoApplication {
 
 		return runner ->{
 
-			deleteStudent(studentDAO);
+			createMultipleStudents(studentDAO);
+			//deleteAllStudent(studentDAO);
 
 		};
+
+	}
+
+	private void deleteAllStudent(StudentDAO studentDAO) {
+		System.out.println("Deleting all students");
+		int numRowsDeleted=studentDAO.deleteAll();
+		System.out.println("Deleted row count:"+numRowsDeleted);
 
 	}
 
