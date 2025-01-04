@@ -21,9 +21,17 @@ public class CruddemoApplication {
 
 		return runner ->{
 
-			updateStudent(studentDAO);
+			deleteStudent(studentDAO);
 
 		};
+
+	}
+
+	private void deleteStudent(StudentDAO studentDAO) {
+		int studentId=3;
+		System.out.println("Deleting student id:" +studentId);
+		studentDAO.delete(studentId);
+
 
 	}
 
