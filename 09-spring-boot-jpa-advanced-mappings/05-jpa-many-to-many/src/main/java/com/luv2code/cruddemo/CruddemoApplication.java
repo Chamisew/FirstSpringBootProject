@@ -23,8 +23,20 @@ public class CruddemoApplication {
 
 			//createCourseAndStudents(appDAO);
 
-			findCourseAndStudents(appDAO);
+			//findCourseAndStudents(appDAO);
+
+			findStudentAndCourses(appDAO);
 		};
+
+	}
+
+	private void findStudentAndCourses(AppDAO appDAO) {
+		int theID=2;
+		Student tempStudent=appDAO.findStudentAndCourseByStudentId(theID);
+
+		System.out.println("Loaded student:"+tempStudent);
+		System.out.println("courses:"+tempStudent.getCourses());
+		System.out.println("Done");
 
 	}
 
