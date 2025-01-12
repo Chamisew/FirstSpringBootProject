@@ -27,7 +27,7 @@ public class CruddemoApplication {
 
 		 	//findInstructor(appDAO);
 
-			//deleteInstructor(appDAO);
+			deleteInstructor(appDAO);
 
 			//findInstructorDetail(appDAO);
 
@@ -43,7 +43,7 @@ public class CruddemoApplication {
 
 			//updateInstructor(appDAO);
 
-			updateCourse(appDAO);
+			//updateCourse(appDAO);
 
 
 		};
