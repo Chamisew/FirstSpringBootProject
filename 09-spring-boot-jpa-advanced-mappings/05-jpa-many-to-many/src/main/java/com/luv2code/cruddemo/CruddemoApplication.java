@@ -23,7 +23,7 @@ public class CruddemoApplication {
 	public CommandLineRunner commandLineRunner(AppDAO appDAO){
 
 		return runner->{
-			
+
 		};
 
 	}
