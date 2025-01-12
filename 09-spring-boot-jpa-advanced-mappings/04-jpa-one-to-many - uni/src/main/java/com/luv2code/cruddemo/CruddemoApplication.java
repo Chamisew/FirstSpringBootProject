@@ -23,6 +23,7 @@ public class CruddemoApplication {
 
 		return runner->{
 
+			//create course and the reviews
 		};
 
 	}
